@@ -706,6 +706,729 @@ const QUESTIONS = [
     ],
     answer: 1,
     explain: "A Clark-type O2 sensor applies a fixed potential and measures steady-state current proportional to dissolved O2 — that is amperometry."
+  },
+
+  // ============ MORE BIOSENSORS ============
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "A complete biosensor system consists of three main components. Which is NOT one of them?",
+    choices: ["Bioreceptor", "Transducer", "Signal processor", "Mass spectrometer"],
+    answer: 3,
+    explain: "A biosensor combines a bioreceptor (recognition), a transducer (detector element), and a signal processor (display) — a mass spectrometer is a separate analytical instrument, not part of the biosensor architecture."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "In aptamer development, SELEX stands for:",
+    choices: [
+      "Selective Electrochemistry Experiment",
+      "Systematic Evolution of Ligands by Exponential enrichment",
+      "Single-Electron Ligand Excitation",
+      "Solid Electrode Liquid Exchange"
+    ],
+    answer: 1,
+    explain: "SELEX (Systematic Evolution of Ligands by Exponential enrichment) is the iterative in vitro selection process used to identify aptamers from random oligonucleotide pools."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "For an evanescent-wave optical biosensor to operate, the light at the interface must satisfy:",
+    choices: [
+      "θ < θc, so the light is transmitted through the interface",
+      "θ > θc, so total internal reflection occurs and an evanescent field probes the sample",
+      "The Brewster angle condition",
+      "Bragg diffraction"
+    ],
+    answer: 1,
+    explain: "Evanescent-wave biosensors rely on total internal reflection (θ > θc); only the evanescent field that extends a short distance into the lower-index medium interrogates the sample."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Which transducer category does a Quartz Crystal Microbalance (QCM) belong to?",
+    choices: ["Optical", "Mechanical / gravimetric", "Electrochemical", "Calorimetric"],
+    answer: 1,
+    explain: "QCMs are mechanical (gravimetric) transducers — they sense mass per unit area via shifts in the quartz crystal's resonant frequency, alongside piezoelectric and magnetoelastic devices."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Which of the following is the best transducer to use for detecting tiny mass changes at a surface (e.g. specific protein binding)?",
+    choices: [
+      "Conductimetric",
+      "Quartz crystal microbalance (QCM) / piezoelectric",
+      "Potentiometric",
+      "Thermal"
+    ],
+    answer: 1,
+    explain: "Piezoelectric / QCM transducers detect mass adsorbed on the crystal surface via a frequency change — ideal for thin-layer binding events."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "A microcantilever biosensor detects analyte binding primarily by:",
+    choices: [
+      "A color change at the tip",
+      "Bending of the cantilever (surface stress) or a shift in its resonance frequency on binding",
+      "Production of light at the tip",
+      "Heat generated at the support"
+    ],
+    answer: 1,
+    explain: "Microcantilevers act as nanomechanical transducers — analyte binding either bends the cantilever via surface stress, or adds mass that shifts its resonance frequency."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Which best describes the role of a lateral flow biosensor (LFB)?",
+    choices: [
+      "A laboratory potentiostat for continuous monitoring",
+      "A disposable, capillary-driven strip for rapid point-of-care testing (e.g. pregnancy tests, COVID lateral-flow strips)",
+      "A high-resolution mass spectrometer",
+      "A surface plasmon resonance instrument"
+    ],
+    answer: 1,
+    explain: "Lateral flow biosensors are paper/membrane strips that wick fluid by capillary action to a recognition zone — used for rapid point-of-care diagnostics."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Electrochemical impedance spectroscopy in a biosensor measures:",
+    choices: [
+      "Only the steady DC current",
+      "The opposition (impedance) to an applied AC signal as a function of frequency",
+      "The mass of the electrode coating",
+      "The heat released by binding"
+    ],
+    answer: 1,
+    explain: "Impedance biosensors apply a small AC perturbation and measure the impedance versus frequency — sensitive to interfacial changes (binding, layer formation) at the electrode."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Which optical biosensing technique uses light produced directly by a chemical reaction (no external excitation source)?",
+    choices: ["Surface plasmon resonance", "Chemiluminescence", "Fluorescence", "Evanescent-wave absorption"],
+    answer: 1,
+    explain: "Chemiluminescent biosensors detect light emitted by a chemical (often enzyme-catalyzed) reaction — no excitation light is required, which keeps backgrounds low."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "DSC and TGA are both thermal techniques. What does TGA specifically measure?",
+    choices: [
+      "Heat capacity change of the sample",
+      "Mass change of the sample as temperature is varied",
+      "Refractive index change",
+      "Electrochemical potential"
+    ],
+    answer: 1,
+    explain: "Thermogravimetric Analysis (TGA) records the mass of a sample as temperature is ramped — useful for studying decomposition, dehydration, oxidation. DSC measures heat-flow differences."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Atomic Force Microscopy (AFM) produces images by:",
+    choices: [
+      "Bombarding the sample with high-energy electrons",
+      "Sensing the force between a sharp tip and the sample as it rasters across the surface",
+      "Measuring X-ray emission energies",
+      "Detecting absorbed UV light"
+    ],
+    answer: 1,
+    explain: "AFM scans a sharp tip over the surface and senses tip–sample forces (typically via cantilever deflection), giving nanoscale topography of conducting or insulating samples."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Combined SEM–EDS analysis provides:",
+    choices: [
+      "Mass spectra of dissolved metals only",
+      "High-resolution surface imaging plus elemental composition (from characteristic X-rays)",
+      "pH titration curves",
+      "Refractive-index profiles"
+    ],
+    answer: 1,
+    explain: "SEM gives morphology via electron imaging; EDS uses characteristic X-rays emitted under electron beam excitation to identify and roughly quantify the elements present."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Flow Injection Analysis (FIA) is best described as:",
+    choices: [
+      "A spectroscopic technique using flame atomization",
+      "A continuous-flow technique where small sample plugs are injected into a flowing carrier stream and detected downstream",
+      "A potentiometric titration",
+      "A type of X-ray imaging"
+    ],
+    answer: 1,
+    explain: "FIA is a continuous-flow method: a small, reproducible sample volume is injected into a non-segmented carrier stream and merges with reagents before reaching a flow-through detector."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "Compared with stable IDA, radioactive IDA:",
+    choices: [
+      "Uses radioisotopes as tracers and quantifies the analyte from specific activity before vs after dilution",
+      "Avoids the use of any tracer",
+      "Is the more modern and safer approach",
+      "Uses only ICP-MS for detection"
+    ],
+    answer: 0,
+    explain: "Radioactive IDA uses radioisotope spikes and tracks the change in specific activity caused by dilution with the unknown. Stable IDA (with MS) is the more modern, safer default."
+  },
+  {
+    topic: "Biosensors",
+    source: "Biosensors.pdf",
+    q: "The advantage of nanomaterial-based biosensors over conventional bulk-electrode biosensors comes mainly from:",
+    choices: [
+      "Their much smaller surface-to-volume ratio",
+      "Their high surface-to-volume ratio, often enhanced electron transfer, and improved sensitivity",
+      "An inability to immobilize biomolecules on them",
+      "Being chemically inert in every solvent"
+    ],
+    answer: 1,
+    explain: "Nanomaterials (CNTs, AuNPs, graphene, etc.) provide a very high surface-to-volume ratio, often promote electron transfer, and allow novel immobilization strategies — boosting sensitivity and lowering detection limits."
+  },
+
+  // ============ MORE POTENTIOMETRY ============
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "In the Nernst equation written at 25 °C as E = E° − (0.0592/n) log Q, what does n represent?",
+    choices: [
+      "The number of moles of analyte",
+      "The number of electrons transferred in the half-reaction",
+      "Avogadro's number",
+      "The pH of the solution"
+    ],
+    answer: 1,
+    explain: "n is the number of electrons transferred per mole in the half-reaction. The 0.0592 V comes from 2.303·RT/F at 25 °C."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Which of the following statements about standard electrode potentials (E°) is FALSE?",
+    choices: [
+      "E° is temperature dependent",
+      "E° refers exclusively to a reduction half-reaction",
+      "E° depends on the number of moles of reactant shown in the equation",
+      "A positive E° means the half-reaction is spontaneous versus the SHE"
+    ],
+    answer: 2,
+    explain: "E° is INDEPENDENT of the number of moles written in the balanced half-reaction — it is an intensive quantity. The other three statements are correctly listed properties."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Substituting concentration for activity in a Nernst-equation calculation introduces error that is worst:",
+    choices: [
+      "At very low temperature",
+      "At high ionic strength",
+      "At infinite dilution",
+      "When the analyte is colorless"
+    ],
+    answer: 1,
+    explain: "Concentration ≈ activity is a good approximation only in very dilute solutions; at high ionic strength activity coefficients deviate strongly from 1."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "The relationship between the cell potential E and the Gibbs free energy of the cell reaction is:",
+    choices: ["ΔG = +nFE", "ΔG = −nFE", "ΔG = nF/E", "ΔG = E/(nF)"],
+    answer: 1,
+    explain: "ΔG = −nFE. A spontaneous reaction (negative ΔG) corresponds to a positive cell potential."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Which instrument is designed to control the CURRENT through an electrochemical cell rather than the potential?",
+    choices: ["Potentiometer", "Potentiostat", "Galvanostat", "Voltmeter"],
+    answer: 2,
+    explain: "A galvanostat controls the current flowing through the cell. A potentiostat controls potential; a potentiometer measures potential at zero current."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Which of the following is a BULK electrochemical method, where the signal depends on properties of the whole solution?",
+    choices: ["Potentiometry", "Voltammetry", "Conductometry", "Electrogravimetry"],
+    answer: 2,
+    explain: "Conductometry measures the resistance/conductivity of the whole solution — a bulk method. Potentiometry, voltammetry, electrogravimetry and coulometry are interfacial methods."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "The potential of the saturated calomel electrode (SCE) at 25 °C is approximately:",
+    choices: ["0.000 V", "+0.241 V (≈ 0.2444 V)", "+0.799 V", "−0.413 V"],
+    answer: 1,
+    explain: "Saturated calomel (Hg | Hg2Cl2 | sat'd KCl) sits at about +0.2444 V vs SHE at 25 °C. (0.336 V for 0.1 M KCl, 0.250 V for 3.5 M KCl.)"
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "The half-reaction that determines the potential of a Ag/AgCl reference electrode is:",
+    choices: [
+      "Ag+ + e- → Ag",
+      "AgCl(s) + e- → Ag(s) + Cl-",
+      "2 Ag + Cl2 → 2 AgCl",
+      "Ag → Ag+ + e-"
+    ],
+    answer: 1,
+    explain: "AgCl(s) + e- → Ag(s) + Cl-. The potential therefore depends on a(Cl-) — controlled by the KCl filling solution."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Why is the Standard Hydrogen Electrode (SHE) rarely used in routine bench-top measurements?",
+    choices: [
+      "Its potential is not known accurately",
+      "It is inconvenient to operate (needs H2 gas at 1 atm over Pt black) and is a fire hazard",
+      "It is the most accurate reference for all measurements",
+      "It produces large currents"
+    ],
+    answer: 1,
+    explain: "Despite being the thermodynamic reference (E° ≡ 0 V), the SHE requires H2 gas and a Pt-black electrode — inconvenient and a fire hazard. SCE and Ag/AgCl are the routine workhorses."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Which of the following is the best indicator electrode to use for monitoring an Fe3+/Fe2+ couple in solution?",
+    choices: [
+      "Pure iron electrode (first kind)",
+      "An inert platinum electrode (third kind / inert)",
+      "A glass pH electrode",
+      "A LaF3 crystalline membrane"
+    ],
+    answer: 1,
+    explain: "Pt is the classic inert (third-kind) indicator electrode for soluble redox couples like Fe3+/Fe2+ — its potential follows Nernst for the couple without itself participating in the reaction."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Common sources of error when measuring pH with a glass electrode include:",
+    choices: [
+      "Alkali error, acid error, dehydration of the membrane, and errors in standard buffers",
+      "Only humidity in the room",
+      "Only the temperature of the buret",
+      "Only convection currents in the sample"
+    ],
+    answer: 0,
+    explain: "Glass-electrode pH errors include alkali error (high-pH response to Na+), acid error (very low pH), dehydration of the membrane, low-ionic-strength error, and inaccurate calibration buffers."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "The membrane of a typical pH glass electrode is composed of approximately:",
+    choices: [
+      "Pure SiO2",
+      "SiO2 (~72%), Na2O (~22%), CaO (~6%) silicate glass",
+      "Na3PO4",
+      "Pure NaCl"
+    ],
+    answer: 1,
+    explain: "The standard pH-responsive glass has approximately SiO2 ~72%, Na2O ~22%, CaO ~6% — a silicate framework with charge-balancing cations involved in ion exchange with H+."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Within the hydrated gel layer at the surface of a glass pH membrane, which ion actually carries the current?",
+    choices: ["Na+", "H+", "Ca2+", "SiO4^4-"],
+    answer: 1,
+    explain: "H+ carries the current at/near the surface via ion exchange in the hydrated gel layer. Na+ carries current in the dry interior; Ca2+ is immobile."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "ISFET stands for and refers to:",
+    choices: [
+      "Internal Solid Field Electrolyte Transistor; a glass electrode",
+      "Ion-Sensitive Field-Effect Transistor; a semiconductor-based indicator electrode",
+      "Iron Sulfide Fixed Electrode Transducer; a redox sensor",
+      "Inert Soft Filter Electrode Tube; a salt-bridge variant"
+    ],
+    answer: 1,
+    explain: "An ion-sensitive field-effect transistor uses an ion-selective layer in place of the conventional gate, giving a drain current that depends on analyte-ion activity."
+  },
+  {
+    topic: "Potentiometry",
+    source: "Electroanalysis_Potentiometry.pdf",
+    q: "Which of the following is the best ion-selective electrode to use for selective measurement of S2- in solution?",
+    choices: [
+      "LaF3 single-crystal membrane",
+      "Mixed-crystal Ag2S membrane",
+      "pH glass electrode",
+      "Inert Pt electrode"
+    ],
+    answer: 1,
+    explain: "A mixed-crystalline Ag2S membrane responds selectively to S2- (and Ag+). LaF3 is for F-; glass is for H+/Na+; Pt is non-selective."
+  },
+
+  // ============ MORE ELECTROGRAVIMETRY & COULOMETRY ============
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "The 'iR drop' that contributes to the applied potential in an electrolysis cell is:",
+    choices: [
+      "The IR-spectrum absorption of the sample",
+      "The ohmic potential drop across the cell's resistance (E = i × R)",
+      "An intra-orbital relaxation of electrons",
+      "The change in potential due to temperature"
+    ],
+    answer: 1,
+    explain: "iR drop is the ohmic loss across the resistance of the cell solution and connections (V = i × R) that the applied potential must overcome."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Kinetic polarization arises from:",
+    choices: [
+      "Slow mass transport of analyte to the electrode",
+      "A slow rate of electron transfer between electrode and reactant",
+      "Pure ohmic resistance of the solution",
+      "Convection caused by stirring"
+    ],
+    answer: 1,
+    explain: "Kinetic (activation) polarization is the overpotential needed to drive electron transfer fast enough for the desired current — distinct from concentration polarization (mass-transport limited)."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Which mass-transport mechanism is driven by a concentration gradient and random thermal motion?",
+    choices: ["Migration", "Convection", "Diffusion", "Conduction"],
+    answer: 2,
+    explain: "Diffusion is the movement of species from regions of higher concentration to lower concentration, driven by random thermal motion and the gradient."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Migration as a mass-transport mode refers to:",
+    choices: [
+      "Diffusion in a concentration gradient",
+      "Movement of ions under the influence of an electric field",
+      "Mechanical convection by stirring",
+      "Adsorption onto the electrode"
+    ],
+    answer: 1,
+    explain: "Migration is the movement of charged species in response to an applied electric field; its rate increases with field strength."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Convection in an electrochemical cell is most directly achieved by:",
+    choices: [
+      "Heating the solution to boiling",
+      "Mechanical stirring or movement of electrode/solution",
+      "Adding more supporting electrolyte",
+      "Decreasing the current to zero"
+    ],
+    answer: 1,
+    explain: "Convection in electroanalysis is normally achieved with a stirrer, rotating electrode, or solution flow — i.e. some form of bulk fluid motion."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Which of the following is NOT one of the six steps of a complete electron-transfer event at an electrode?",
+    choices: [
+      "Mass transport of oxidant from bulk solution to the electrode",
+      "Transient adsorption of the oxidant onto the electrode surface",
+      "Charge transfer between electrode and oxidant (faradaic step)",
+      "Photon absorption by the oxidant"
+    ],
+    answer: 3,
+    explain: "The six steps are: O transports to the electrode, O adsorbs (non-faradaic), charge transfer (faradaic), R desorbs, R transports away, plus any coupled chemical step. Photon absorption is not part of the electron-transfer scheme."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Faraday's constant has the approximate value:",
+    choices: [
+      "9.65 × 10^4 C mol-1",
+      "6.022 × 10^23 mol-1",
+      "8.314 J K-1 mol-1",
+      "1.602 × 10^-19 C"
+    ],
+    answer: 0,
+    explain: "F ≈ 96 487 C/mol — the charge of one mole of electrons. The other constants are NA, R, and e respectively."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "If the current i(t) varies during the electrolysis, the total charge Q passed is:",
+    choices: [
+      "i × Δt, valid for any i(t)",
+      "The integral of i(t) dt over the electrolysis time",
+      "F × n only",
+      "Exactly 1 coulomb regardless of i(t)"
+    ],
+    answer: 1,
+    explain: "For variable current, Q = ∫ i(t) dt over the electrolysis. Q = i × t is just the special case of constant current."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "When Cu is electrodeposited on a Pt cathode from a CuSO4/H2SO4 solution, the typical anode reaction is:",
+    choices: [
+      "Cu(s) → Cu2+ + 2 e-",
+      "2 H2O → O2(g) + 4 H+ + 4 e-",
+      "2 Cl- → Cl2 + 2 e-",
+      "O2 + 4 H+ + 4 e- → 2 H2O"
+    ],
+    answer: 1,
+    explain: "With no easier-to-oxidize species present, water is oxidized at the Pt anode to give O2 while Cu2+ is reduced to Cu(s) at the cathode."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "In a 3-electrode cell, the auxiliary (counter) electrode's primary role is to:",
+    choices: [
+      "Provide an accurately known reference potential",
+      "Carry the cell current so that essentially no current flows through the reference electrode",
+      "Stir the solution",
+      "Measure the temperature"
+    ],
+    answer: 1,
+    explain: "The auxiliary electrode is the current sink/source. Because almost no current flows through the reference electrode, its potential stays constant and there is no significant iR drop on the reference."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "A major reason for generating titrant in situ by coulometry (e.g. OH- from water reduction) instead of dispensing a stored standard NaOH from a burette is:",
+    choices: [
+      "It requires no electricity",
+      "It avoids problems with carbonate contamination of stored NaOH",
+      "It needs no power supply",
+      "It always requires a visual indicator"
+    ],
+    answer: 1,
+    explain: "Stored NaOH absorbs atmospheric CO2 and forms carbonate, complicating standardization. Generating OH- electrolytically in situ avoids this — and very small amounts can be delivered very precisely."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "In coulometric Karl Fischer titration, approximately how much charge corresponds to 1 mg of H2O?",
+    choices: ["About 0.01 C", "About 1 C", "About 10.72 C", "About 1000 C"],
+    answer: 2,
+    explain: "For the Karl Fischer reaction, ~10.72 C of charge corresponds to 1 mg of water — derived from Faraday's law and the stoichiometry of the I2 + H2O reaction."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "The accuracy of coulometric methods is ultimately limited by:",
+    choices: [
+      "How accurately you can weigh the electrode",
+      "How accurately current and time can be measured (four or five sig figs is routine)",
+      "Solvent viscosity",
+      "The color of the solution"
+    ],
+    answer: 1,
+    explain: "Since N = i·t/(nF), the precision of coulometry is set by the current and time measurements — four to five significant figures of accuracy is routinely possible."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Which of the following is the best technique to use to PRECONCENTRATE a trace metal out of a large (>1 L) volume of solution onto a small electrode for later analysis?",
+    choices: [
+      "Coulometric titration",
+      "Electrogravimetric / electrolytic deposition",
+      "Karl Fischer titration",
+      "Potentiometric titration"
+    ],
+    answer: 1,
+    explain: "Plating the metal out of a large solution volume onto a small electrode effectively increases its surface concentration — that's electrogravimetric preconcentration, often used before stripping voltammetry."
+  },
+  {
+    topic: "Electrogravimetry & Coulometry",
+    source: "Electrogravimetric and coulometric methods.pdf",
+    q: "Which of the following is NOT a stated advantage of coulometric methods of analysis?",
+    choices: [
+      "No need to standardize a titrant solution",
+      "Very small samples can be analyzed",
+      "Use of titrants that would otherwise be unstable",
+      "Always faster than spectrophotometry"
+    ],
+    answer: 3,
+    explain: "Coulometric methods aren't inherently faster than spectrophotometry. The listed advantages are: no standardization needed, very sensitive, can use unstable titrants, and 4–5 sig fig precision."
+  },
+
+  // ============ MORE VOLTAMMETRY ============
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "According to IUPAC, 'voltametry' (one 'm') refers to:",
+    choices: [
+      "The same thing as voltammetry — just a spelling variant",
+      "A controlled-current potentiometric titration",
+      "A type of photometric titration",
+      "Cyclic voltammetry specifically"
+    ],
+    answer: 1,
+    explain: "With a single 'm', voltametry is defined by IUPAC as a controlled-current potentiometric titration — NOT the same as voltammetry (two m's), which measures current vs potential."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "A 'faradaic current' in voltammetry is:",
+    choices: [
+      "Current from double-layer charging",
+      "Current from a redox reaction at the working electrode (electrons crossing the interface)",
+      "Capacitive AC current only",
+      "Current induced by an external magnetic field"
+    ],
+    answer: 1,
+    explain: "Faradaic current arises from actual redox reactions (electrons crossing the interface), in contrast with non-faradaic current, which is mostly capacitive (double-layer) charging."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "In the convention used in your course, an anodic current at the working electrode (analyte oxidation) is given which sign?",
+    choices: ["Positive", "Negative", "Always zero", "Depends on temperature"],
+    answer: 1,
+    explain: "Per the stated convention: cathodic (reduction) current is positive, anodic (oxidation) current is negative."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "Which mercury working electrode forms drops continuously under gravity at the end of a capillary?",
+    choices: [
+      "Hanging mercury drop electrode (HMDE)",
+      "Dropping mercury electrode (DME)",
+      "Static mercury drop electrode (SMDE)",
+      "Thin mercury film electrode (TMFE)"
+    ],
+    answer: 1,
+    explain: "DME drops form continuously under gravity. HMDE holds one drop suspended; SMDE forms drops via a mechanical plunger; TMFE is a thin film on a solid support."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "A static mercury drop electrode (SMDE) differs from the classical DME in that:",
+    choices: [
+      "It uses solid mercury",
+      "Each drop is formed by a mechanical plunger rather than only by gravity",
+      "It floats on the solution surface",
+      "It does not give a fresh surface for each measurement"
+    ],
+    answer: 1,
+    explain: "A SMDE uses a mechanical plunger to extrude each new drop on demand — giving a fresh surface but with electronically controlled timing and drop size."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "Glassy carbon is commonly chosen as a working electrode because it:",
+    choices: [
+      "Dissolves easily in mild acid",
+      "Has a wide usable potential window and is chemically inert in most aqueous and organic solvents",
+      "Cannot be polished",
+      "Has very poor electrochemical stability"
+    ],
+    answer: 1,
+    explain: "Glassy (vitreous) carbon has a wide usable potential range, low background current, mechanical robustness, and can be polished — making it a workhorse working-electrode material."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "A carbon paste electrode (CPE) is made from:",
+    choices: [
+      "Graphite (or other carbon) powder mixed with an inert binder such as mineral oil",
+      "Pure mercury",
+      "Solid glass with a carbon coating",
+      "A platinum amalgam"
+    ],
+    answer: 0,
+    explain: "A carbon paste electrode is a mix of graphite (or other carbon) powder and a non-conducting binder (mineral or silicone oil), packed into a holder; easily modified with reagents."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "Screen-printed electrodes are particularly useful for:",
+    choices: [
+      "Large industrial electrolysis cells",
+      "Disposable, low-cost, miniaturized voltammetric devices (e.g. glucose test strips)",
+      "Generating large amounts of titrant",
+      "Long-term reference electrodes"
+    ],
+    answer: 1,
+    explain: "Screen-printed electrodes are mass-produced, low-cost, miniaturized, and disposable — well-suited to point-of-care and field-portable sensors."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "In a stirred solution at a stationary electrode, the Nernst diffusion layer is typically about how thick?",
+    choices: ["Several centimeters", "1–10 µm", "1–10 nm", "1 mm to 1 cm"],
+    answer: 1,
+    explain: "Convective flow past the electrode produces a thin (~1–10 µm) Nernst diffusion layer; mass transport across it is by diffusion alone."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "When electron-transfer kinetics are very slow on the experimental timescale, the voltammetric response is described as:",
+    choices: [
+      "Electrochemically reversible",
+      "Electrochemically irreversible",
+      "Faradaic",
+      "Non-faradaic"
+    ],
+    answer: 1,
+    explain: "With slow kinetics, the surface concentrations no longer obey the Nernst equation during the scan and the wave appears drawn-out and shifted — termed electrochemically irreversible."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "In normal-pulse and differential-pulse polarography, the cycle time τ is approximately:",
+    choices: ["1 ms", "1 second", "1 minute", "1 hour"],
+    answer: 1,
+    explain: "Typical NPP and DPP cycle time is about 1 s. Square-wave polarography uses much shorter (~5 ms) cycles for higher speed."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "In cyclic voltammetry, the peak current ip depends on which combination of parameters (Randles–Ševčík-style)?",
+    choices: [
+      "Only the temperature",
+      "The number of electrons n, electrode area A, diffusion coefficient D, scan rate υ, and analyte concentration CA",
+      "The color of the working electrode",
+      "Only the cell volume"
+    ],
+    answer: 1,
+    explain: "Per the Randles–Ševčík relation introduced in the slides, ip depends on n, A, D, υ, and the analyte concentration CA at the electrode."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "For a diffusion-controlled redox reaction in cyclic voltammetry, increasing the scan rate (υ) generally:",
+    choices: [
+      "Decreases the peak current",
+      "Increases the peak current (scales with √υ)",
+      "Eliminates the peak entirely",
+      "Reverses the sign of the current"
+    ],
+    answer: 1,
+    explain: "For a diffusion-controlled CV response, ip scales with √υ — faster scans produce larger peak currents and a thinner diffusion layer."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "An electrochemically REVERSIBLE redox couple in cyclic voltammetry is diagnosed at 25 °C by:",
+    choices: [
+      "Peak separation ΔEp ≈ 59/n mV with anodic/cathodic peak heights approximately equal",
+      "No peaks visible at all",
+      "Peak separation ≥ 500 mV",
+      "Identical curves at every scan rate including zero"
+    ],
+    answer: 0,
+    explain: "For an electrochemically reversible n-electron couple, ΔEp ≈ 59/n mV at 25 °C and ip,a / ip,c ≈ 1. Larger ΔEp indicates quasi-reversible or irreversible behavior."
+  },
+  {
+    topic: "Voltammetry",
+    source: "Voltammetry.pdf",
+    q: "Which of the following is the best voltammetric technique to use to quantify a sub-ppb concentration of Pb2+ in drinking water?",
+    choices: [
+      "Cyclic voltammetry of the unconcentrated sample",
+      "Anodic stripping voltammetry (ASV)",
+      "Direct amperometry at fixed potential without preconcentration",
+      "Coulometric titration"
+    ],
+    answer: 1,
+    explain: "ASV electrodeposits and preconcentrates Pb on the electrode, then strips it anodically — giving huge signal-to-background ratios and ppb (or sub-ppb) detection limits."
   }
 ];
 
