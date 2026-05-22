@@ -1,0 +1,15 @@
+# Extracted lecture content - local working copy only
+text/
+
+# Python helper script
+extract.py
+__pycache__/
+*.pyc
+
+# OS/IDE noise
+.DS_Store
+.vscode/
+.idea/
+
+# Vercel
+.vercel

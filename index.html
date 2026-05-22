@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electroanalytical Methods Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Electroanalytical Methods Quiz</h1>
+      <p class="sub">Questions from your Biosensors, Potentiometry, Electrogravimetry/Coulometry &amp; Voltammetry slides.</p>
+    </header>
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="card">
+      <h2>Pick a topic and go.</h2>
+      <div class="controls">
+        <label>
+          Topic
+          <select id="topic-select"></select>
+        </label>
+        <label>
+          Questions
+          <select id="count-select">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="0">All</option>
+          </select>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="shuffle-choices" checked /> Shuffle choices
+        </label>
+      </div>
+      <button id="start-btn" class="primary">Start quiz</button>
+      <p class="muted" id="bank-info"></p>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quiz-screen" class="card hidden">
+      <div class="progress-row">
+        <span id="progress-label">Question 1 of 20</span>
+        <span id="score-label">Score: 0</span>
+      </div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+
+      <div class="topic-tag" id="topic-tag"></div>
+      <h2 id="question-text"></h2>
+      <div id="choices" class="choices"></div>
+
+      <div id="explain" class="explain hidden"></div>
+
+      <div class="quiz-footer">
+        <button id="quit-btn" class="ghost">Quit</button>
+        <button id="next-btn" class="primary hidden">Next →</button>
+      </div>
+    </section>
+
+    <!-- RESULTS SCREEN -->
+    <section id="results-screen" class="card hidden">
+      <h2>Done.</h2>
+      <p class="big-score" id="final-score"></p>
+      <p class="muted" id="final-breakdown"></p>
+      <details id="review-details">
+        <summary>Review answers</summary>
+        <div id="review-list"></div>
+      </details>
+      <div class="quiz-footer">
+        <button id="restart-btn" class="primary">Play again</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
